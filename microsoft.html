@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft - cloud,computers,</title>
+    <style>
+      body{
+        margin:0;
+        padding: 0;
+        border: 2px solid gray;
+        text-align: center;
+      
+position: relative;
+      }
+
+      #head {
+        width: 100%;
+        height: 900px;
+       /* border: 2px solid green;*/
+        text-align: center;
+        position: relative;
+      }
+      #logo {
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+      justify-content: center;
+        border:2px solid red;
+
+        line-height: 20px;
+     
+      }
+      h4 {
+        line-height: 80px;
+      }
+      .word {
+        word-spacing: 500em;
+      }
+      .not {
+
+        position: relative;
+        top: 5px;
+        right: -700px;
+      }
+      .carousel {
+        width: 100%;
+        height: 900px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .carousel-inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+     
+        justify-content: center;
+        transition: transform 0.5s ease;
+      }
+
+      .carousel-item {
+        padding-right: 100px;
+        flex: 0 0 80%;
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: #fff;}
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="logo">
+        <img
+          src="C:\Users\surya\OneDrive\Pictures\microsoft logo.png"
+          height="35px"
+          width="35px"
+        />
+        <h2>&nbsp Microsoft</h2>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <p>Microsoft 365</p>
+        <p class="word">Team</p>
+        &nbsp&nbsp&nbsp
+        <p class="word">Windows</p>
+        &nbsp&nbsp&nbsp
+        <p class="word">Surface</p>
+        &nbsp&nbsp&nbsp
+        <p class="word">Xbox</p>
+        &nbsp&nbsp&nbsp
+        <p class="word">Support</p>
+        &nbsp&nbsp&nbsp
+        <label class="not">All Microsoft</label>
+        <select class="not">
+          <option value="Kartheek">kk</option>
+          <option value="sai">js</option>
+          <option value="teju">dt</option>
+          <option value="Lasya">rl</option>
+          <option value="Durga">md</option>
+        </select>
+      </div>
+    </div>
+    <div class="carousel">
+      <div class="carousel-inner" id="carouselInner">
+        <div class="carousel-item">
+          <img
+            src="C:\Users\surya\OneDrive\Pictures\Screenshots\Screenshot 2023-05-29 101552.png"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="C:\Users\surya\OneDrive\Pictures\Screenshots\Screenshot 2023-05-29 101609.png"
+          />>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="C:\Users\surya\OneDrive\Pictures\Screenshots\Screenshot 2023-05-29 101552.png"
+          />>
+        </div>
+      </div>
+    </div>
+    <script>
+      var carousel = document.querySelector(".carousel");
+      var carouselInner = document.querySelector("#carouselInner");
+      var carouselItems = Array.from(
+        document.querySelectorAll(".carousel-item")
+      );
+      var currentIndex = 0;
+
+      function showSlide(index) {
+        carouselInner.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      function nextSlide() {
+        currentIndex++;
+        if (currentIndex >= carouselItems.length) {
+          currentIndex = 0;
+        }
+        showSlide(currentIndex);
+      }
+
+      function prevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) {
+          currentIndex = carouselItems.length - 1;
+        }
+        showSlide(currentIndex);
+      }
+
+      setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    </script>
+  </body>
+</html>

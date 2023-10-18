@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      body {
+        width: 100%;
+        height: 800px;
+
+        padding-left: 30px;
+      }
+
+      .logo {
+        float: left;
+      }
+
+      header {
+        height: 80px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h2 {
+        line-height: 40px;
+      }
+      nav {
+        height: 40px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /*white-space: pre-line;*/
+      }
+      .ok {
+        float: right;
+        height: 35px;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+      .carousel {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .carousel-inner {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .carousel-item {
+        flex: 0 0 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: #fff;
+      }
+      .kk {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <img
+          src="C:\Users\surya\OneDrive\Pictures\microsoft logo.png"
+          clss="logo"
+          height="30px"
+          width="30px"
+        />&nbsp
+        <h2>Microsoft</h2>
+        &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+        <nav>
+          <p>Microsoft 365 Team</p>
+          &nbsp &nbsp
+          <p>Windows</p>
+          &nbsp &nbsp
+          <p>Surface</p>
+          &nbsp &nbsp
+          <p>xbox</p>
+          &nbsp &nbsp
+          <p>Support</p>
+          &nbsp &nbsp
+          <div class="ok">
+            <p>All Microsoft</p>
+            &nbsp &nbsp
+            <p>Search</p>
+            &nbsp &nbsp&nbsp &nbsp
+            <p>Cart</p>
+            &nbsp &nbsp
+            <p>Sign in</p>
+          </div>
+        </nav>
+      </header>
+
+      <div class="carousel kk">
+        <div class="carousel-inner" id="carouselInner">
+          <div class="carousel-item">
+            <img
+              src="C:\Users\surya\OneDrive\Pictures\Screenshots\Screenshot 2023-05-29 101552.png"
+              height="600px"
+              width="100%"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="C:\Users\surya\OneDrive\Pictures\Screenshots\Screenshot 2023-05-29 101609.png"
+              height="600px"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+      <script>
+        var carousel = document.querySelector(".carousel");
+        var carouselInner = document.querySelector("#carouselInner");
+        var carouselItems = Array.from(
+          document.querySelectorAll(".carousel-item")
+        );
+        var currentIndex = 0;
+
+        function showSlide(index) {
+          carouselInner.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+          currentIndex++;
+          if (currentIndex >= carouselItems.length) {
+            currentIndex = 0;
+          }
+          showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+          currentIndex--;
+          if (currentIndex < 0) {
+            currentIndex = carouselItems.length - 1;
+          }
+          showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+      </script>
+    </div>
+  </body>
+</html>

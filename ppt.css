@@ -1,0 +1,33 @@
+table {
+  /*border: 2px solid gray;*/
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 3px;
+  border: 2px solid gray;
+  border-color: lightgray;
+}
+
+.row1 {
+  border-left: none;
+}
+.row2 {
+  border-right: none;
+}
+.forc {
+  border-top-color: #0087dc;
+  border-bottom-color: #0087dc;
+}
+.middile {
+  border-right-color: #0087dc;
+}
+.main {
+  border-color: #0087dc;
+}
+.ok {
+  color: #1eb963;
+}
+.kl{color:red;}
