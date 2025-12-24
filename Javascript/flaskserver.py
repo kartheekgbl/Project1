@@ -2,6 +2,11 @@ from flask import Flask, request, jsonify
 import mysql.connector
 from flask_cors import CORS
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+
 app = Flask(__name__)
 
 CORS(app)
@@ -9,10 +14,10 @@ CORS(app)
 def get_db_connection():
     print(".........Request connection for MySQL database........")
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="vISHESH@1234567",
-        database="fullstack"
+        host=os.getenv("HOST"),
+        user=os.getenv("USER"),
+        password=os.getenv("PASSWORD"),
+        database=os.getenv("DATABASE")
     )
 
 

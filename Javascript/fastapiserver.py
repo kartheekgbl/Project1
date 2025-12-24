@@ -2,6 +2,10 @@ from fastapi import FastAPI, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import mysql.connector
 
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 app = FastAPI()
 
 # Enable CORS
@@ -14,12 +18,13 @@ app.add_middleware(
 )
 
 def get_db_connection():
+    
     print(".........Request connection for MySQL database........")
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="vISHESH@1234567",
-        database="fullstack"
+        host=os.getenv("HOST"),
+        user=os.getenv("USER"),
+        password=os.getenv("PASSWORD"),
+        database=os.getenv("DATABASE")
     )
 
 @app.post("/save")
