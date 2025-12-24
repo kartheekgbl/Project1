@@ -1,0 +1,27 @@
+/* #header{
+    background-color: #dedede;
+} */
+
+#ftf{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    /* text-align: center; */
+}
+
+#form{
+    /* border: 1px black solid; */
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.bg-pink {
+  background-color: black;
+  color: white;        /* or #ffc0cb */
+}
+.bg-gray {
+  background-color: gray;        /* or #808080 */
+}

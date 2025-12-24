@@ -1,0 +1,189 @@
+body {
+  overflow-x: hidden;
+  font-family: "mulish", sans-serif;
+}
+.globe {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  height: 600px;
+  font-family: "mulish", sans-serif;
+  margin-top: -60px;
+  text-align: justify;
+}
+
+.ABOUT {
+  font-size: xx-large;
+  text-align: left;
+  color: #1295cb;
+}
+
+.first1 {
+  font-size: large;
+}
+
+.img1 {
+  padding-right: 30px;
+}
+
+.about1 {
+  width: 728px;
+  margin-left: 240px;
+  height: 325px;
+  align-items: center;
+}
+
+.down1 {
+  margin-bottom: 120px;
+}
+
+.TEAM {
+  font-size: xx-large;
+  font-weight: lighter;
+  color: #1295cb;
+  margin-top: -150px;
+}
+
+.all {
+  margin: 2px solid gray;
+}
+
+.f1 {
+  text-align: center;
+  width: 379px;
+  height: 250px;
+  font-size: large;
+}
+.down7 {
+  width: 100%;
+  height: 200px;
+
+  background-image: linear-gradient(rgb(117, 210, 226), rgb(184, 221, 226));
+}
+.more {
+  color: rgb(24, 194, 236);
+}
+.h3 {
+  text-align: left;
+}
+.foot1 {
+  height: 100pz;
+  width: 100%;
+}
+.in4 {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.in5 {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img4 {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.note {
+  margin-top: 60px;
+}
+.img5 {
+  margin-left: 2500px;
+  margin-top: -60px;
+}
+.note1 {
+  margin-top: -60px;
+}
+.foot2 {
+  height: 68px;
+}
+
+.container {
+  margin-top: -60px;
+}
+.main {
+  margin-left: 300px;
+  margin-right: 50px;
+  width: 1300px;
+  height: 1500px;
+}
+.pics {
+  width: 150px;
+  height: 200px;
+  border: 2px solid gray;
+  margin-left: 60px;
+  margin-top: 30px;
+  background-image: linear-gradient(green, orange);
+}
+.name {
+  width: 345px;
+  height: 24px;
+  text-align: left;
+}
+.n1 {
+  font-size: x-large;
+}
+.m1 {
+  color: #1295cb;
+}
+
+.name {
+  text-align: left;
+  font-size: large;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.c1 {
+  width: 345.56px;
+  height: 108.98;
+  text-align: left;
+  margin-right: 40px;
+  margin-left: 60px;
+  font-size: large;
+}
+.total {
+  width: 100%;
+  display: flex;
+  height: 240px;
+  align-items: center;
+
+  height: 350px;
+}
+.qoute1 {
+  margin-top: -140px;
+  margin-left: -500px;
+  height: 35px;
+  width: 30px;
+}
+.qoute2 {
+  margin-bottom: -40px;
+  margin-right: -500px;
+  height: 35px;
+  width: 30px;
+}
+
+.c2 {
+  margin-left: 80px;
+  font-weight: 500;
+  font-size: large;
+}
+.cont {
+  margin-top: 50px;
+}
+
+.c1 {
+  margin-top: 30px;
+}
+.lalli {
+  font-size: larger;
+  color: #1295cb;
+  margin-top: 280px;
+  margin-left: -100px;
+}

@@ -1,0 +1,73 @@
+#flex-box{
+border: 1px red solid;
+display: flex;
+flex-wrap: wrap;
+column-gap:10px;
+row-gap: 10px;
+flex-direction: row;
+justify-content: space-between;
+
+align-items: end;
+align-content:center ;
+
+
+}
+.box{
+    border: 1px blue solid;
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+    color: black;
+   
+}
+
+#header{
+    padding: 10px;
+    background-color: #ddd;
+    text-align: center;
+    position:sticky;
+    top: 0px;
+
+}
+
+.fixed-element{
+    background-color: red;
+    width:fit-content;
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#parent{
+    border: blue 1px solid;
+    position: relative;
+
+}
+.AE{
+
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    top: 10px;
+}
+
+.AE1{
+ background-color: aqua;
+ top: 50px;
+ z-index: 1;
+  
+}
+.AE2{
+ background-color: yellow; 
+ z-index: 1;
+  
+}
+.AE3{
+ background-color: pink; 
+  z-index: 1;
+}
+.AE4{
+ background-color: blue;
+    z-index: 1;
+  
+}

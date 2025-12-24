@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Designing</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      header,
+      footer {
+        background-color: burlywood;
+        color: black;
+        padding: 5px;
+        text-align: center;
+      }
+      @media only screen and (max-width: 620px) {
+        nav,
+        main {
+           {
+            width: 100%;
+          }
+        }
+      }
+      nav ul a:hover{text-decoration: none;
+        color:firebrick;
+        display: block;}
+        nav ul a:hover{ background-color: white;
+        color:orangered;}
+        main{
+            width:60%;
+            padding: 5px;
+            text-align: justify;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <header><h1>Programming Tutorials</h1></header>
+    <div style="text-align: center;">
+      <nav style="float: left">
+        <ul>
+          <li><a href="#">Html Introduction</a></li>
+          <li><a href="#">CSS Introduction</a></li>
+          <li><a href="#">Javascript Introduction</a></li>
+          <li><a href="#">React Introduction</a></li>
+          <li><a href="#">angular Introduction</a></li>
+        </ul>
+      </nav>
+      <main style="float: left">
+        <h1>Responsive Web Designing</h1>
+        <p>
+          Responsive web design is a fluid approach whereby a page rearranges
+          itself based on the detected screen size.<br />
+          Adaptive web design is a type of web design whereby the browser loads
+          a layout created specifically for the given platform
+        </p>
+      </main>
+
+      <nav style="float: right">
+        <ul>
+          <li><a href="#">Html </a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Javascript </a></li>
+          <li><a href="#">React </a></li>
+          <li><a href="#">angular </a></li>
+        </ul>
+      </nav>
+    </div>
+    <footer>&copy; k kartheek</footer>
+  </body>
+</html>

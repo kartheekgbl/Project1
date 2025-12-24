@@ -1,0 +1,52 @@
+.bodys {
+  text-align: center;
+  font-size: 30px;
+  /* width: 1900px;
+  height: 850px; */
+  border: solid gainsboro;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#but1 {
+  background-color: aqua;
+}
+
+h4 {
+  color: blue;
+}
+h2 {
+  color: brown;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: anim 5s infinite;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+@keyframes anim {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 550px;
+  }
+}
+
+div {
+  /* border: 1px dashed; */
+  border-radius: 30px;
+  box-shadow: 10px 10px 40px rgb(224, 224, 224);
+}
+
+@media (max-width: 768px) {
+  .bodys {
+    display: block;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title> JavaScript</title>
+        <body>
+            <H2>Magic Bulb</H2>
+            <script>
+                function light(sw)
+                {
+                    var pic;
+                    console.log('goinggggggggggggggggggggg ')
+                    if(sw==0)
+
+
+
+                    
+                {
+                    pic="C:\Users\surya\OneDrive\Pictures\Screenshots\off.png"
+                } 
+            else 
+        {
+            pic="C:\Users\surya\OneDrive\Pictures\Screenshots\on.png"
+        }    
+               document.getElementById('bulb').src=pic;
+            }
+</script>
+<img id="bulb"
+src="C:\Users\surya\OneDrive\Pictures\Screenshots\off.png" width="180" height="200">
+
+<p>
+    <button type="button"
+onclick="light(1)">Light On</button>
+<button type="button"
+onclick="light(0)">light Off</button>   
+</p>
+
+
+
+</body>
+    </head>

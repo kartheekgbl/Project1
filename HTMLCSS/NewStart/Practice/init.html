@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revision All HTML Tags</title>
+    <link rel="stylesheet" href="init.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to Web Development</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <section>
+        <img
+          class="react-image"
+          src="https://th.bing.com/th/id/OIP.ObSVr7BcVoDInL3DKwOLoQHaEJ?w=301&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.1&pid=1.7&rm=3&ucfimg=1"
+          alt="Login image"
+        />
+
+        <p>
+          React is a JavaScript library for building user interfaces. It is
+          maintained by Facebook and a community of developers. React is
+          commonly used for single-page applications and often works with
+          libraries like Redux and React Router.
+        </p>
+      </section>
+
+      <!-- Form Section -->
+      <section class="form">
+        <h5>Register Form</h5>
+
+        <form>
+          <div>
+            <label for="name">Enter your name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <br />
+
+          <div>
+            <label for="dob">Enter DOB</label>
+            <input type="date" id="dob" name="dob" />
+          </div>
+          <br />
+
+          <div>
+            <label for="email">Enter your Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <br />
+
+          <div>
+            <label for="password">Enter password</label>
+            <input type="password" id="password" name="password" />
+          </div>
+          <br />
+
+          <div>
+            <label for="qualification">Qualification</label>
+            <select id="qualification" name="qualification">
+              <option value="UG">UG</option>
+              <option value="PG">PG</option>
+            </select>
+          </div>
+          <br />
+
+          <!-- Gender -->
+          <div>
+            <label>Select Gender</label><br /><br />
+
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+          <br />
+
+          <!-- Skills -->
+          <div>
+            <label>Select Skills</label><br /><br />
+
+            <input type="checkbox" id="html" name="skills" value="HTML" />
+            <label for="html">HTML</label><br />
+
+            <input type="checkbox" id="css" name="skills" value="CSS" />
+            <label for="css">CSS</label><br />
+
+            <input type="checkbox" id="js" name="skills" value="JS" />
+            <label for="js">JavaScript</label>
+          </div>
+          <br />
+
+          <div>
+            <label for="feedback">Give your feedback</label><br />
+            <textarea
+              id="feedback"
+              name="feedback"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <!-- Technology List -->
+      <section id="tech">
+        <h5>Languages</h5>
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ol>
+
+        <h5>Frameworks</h5>
+        <ul>
+          <li>Bootstrap</li>
+          <li>Tailwind CSS</li>
+          <li>Foundation</li>
+        </ul>
+      </section>
+
+    </footer>
+  </body>
+</html>

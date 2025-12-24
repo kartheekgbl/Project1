@@ -1,0 +1,74 @@
+header{
+    background-color: #4caf50;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin: 0px;
+}
+.link {
+  text-decoration: none; /* removes underline */
+  /* color: white;          change color as needed */
+}
+
+nav ul{
+    background-color: #333;
+    list-style-type: none;
+    padding: 0px;
+    margin:0px
+}
+nav ul li{
+    color:white;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav ul li:hover{
+    background-color: #111;
+    color: red;
+    cursor: pointer; 
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#tech{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+   
+}
+
+.react-image{
+    display: block;
+    margin:auto;
+}
+
+main div p{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.form{
+    display: block;
+    font-size: 1.2em;
+    padding: 20px;
+    border: 1px;
+    background-color: blanchedalmond;
+    margin: auto;
+    
+}
+footer{
+    background-color:black;
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+

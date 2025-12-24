@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 10px;
+      }
+      #first-name {
+        margin: 10px;
+      }
+      #last-name {
+        margin: 10px;
+      }
+      #subtn {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header"><h1>User form</h1></header>
+
+    <form id="form">
+      <div id="first-name">
+        <input
+          type="text"
+          name="first-name"
+          value=""
+          placeholder="First name"
+          oninput="log(this.value)"
+        />
+      </div>
+
+      <div id="last-name">
+        <input
+          type="text"
+          name="last-name"
+          value=""
+          placeholder="Last name"
+          oninput="log(this.value)"
+        />
+      </div>
+      <div id="subtn">
+        <button type="submit" onclick="submitform(event)">Submit</button>
+      </div>
+    </form>
+    <script>
+      function log(value) {
+        console.log("Entered value: ", value);
+      }
+/**
+ * Submits a form and sends the form data to a python server
+ * @param {Event} event - The event that triggered this function
+ */
+      function submitform(event) {
+       event.preventDefault();
+        console.log("Submitted Form");
+
+        let form = document.getElementById("form");
+        // console.log(form);
+        let formdata = new FormData(form);
+        console.log("formdata: ");
+        formdata.forEach((value, key) => {
+          console.log(`${key}: ${value}`);});
+
+        //send datat to python
+        fetch("http://127.0.0.1:8000/save", {
+        method: "POST",
+        body: formdata,
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+        });
+   
+    }
+    </script>
+  </body>
+</html>

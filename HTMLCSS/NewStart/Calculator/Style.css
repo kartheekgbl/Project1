@@ -1,0 +1,63 @@
+.Cotain {
+  height: 800px;
+  width: 400px;
+  color: ghostwhite;
+  border: solid gray;
+  align-items: bottom;
+}
+
+.icons {
+  height: 80px;
+  width: 400px;
+  background-color: antiquewhite;
+}
+.inner {
+  height: 700px;
+  width: 400px;
+  border: solid gray;
+}
+#answer {
+  height: 80px;
+  width: 400px;
+  text-align: center;
+  border: solid lightblue;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+.num {
+  height: 500px;
+  width: 400px;
+  margin-top: 10px;
+  border: solid lightblue;
+}
+.but {
+  margin-top: 80px;
+  margin-left: 40px;
+  border-radius: 50px;
+  font-size: 10px;
+  text-align: center;
+  background-color: white;
+}
+.but2 {
+  margin-top: 50px;
+  margin-left: 40px;
+  border-radius: 50px;
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+}
+.but2 {
+  margin-top: 50px;
+  margin-left: 40px;
+  border-radius: 50px;
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+}
+.ss {
+  height: 40px;
+  width: 400px;
+  border: solid black;
+  border-radius: 10px;
+  text-align: center;
+}
