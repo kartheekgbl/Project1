@@ -1,0 +1,68 @@
+body{
+     font-family: "Comfortaa", sans-serif;
+}
+
+
+.parent{
+    position:relative;
+    /* border: 1px black solid; */
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+
+.sub-circle{
+    height: 750px;
+    width: 750px;
+    background-color: #476ef7;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    right: -375px;
+    top: -120px;
+}
+
+.header-home{
+/* border: 1px black solid; */
+display: flex;
+justify-content: space-between;
+position: absolute;
+z-index: 2;
+width: 100%;
+top:10px;
+padding: 0px 25px;
+
+}
+#click-here-btn{
+    color: #476ef7;
+    background-color: white;
+    font-size: large;
+    font-weight: 600;
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.50);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Name{
+    color:#476ef7;
+    font-size:100px;
+}
+
+.form-floating{
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 8px;
+ 
+ 
+}
+#login{
+    background-color: #476ef7;
+    color: white;
+    padding: 5px 25px;
+}
+
+.main-content{
+    margin: 25px;
+}
