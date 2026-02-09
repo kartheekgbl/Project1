@@ -48,4 +48,30 @@ color:white;
     background-color: #476ef7;
     border: 0px;
     color: white;
+    height: 150px;
+}
+
+.card-bod{
+    color: white;
+}
+
+.transaction-table{
+
+    border: 1px black solid;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    font-weight: 600;
+    box-shadow: 0PX 0px 4px rgba(0,0,0,0.5);
+    padding: 0px;
+
+}
+
+#header-row{
+    background-color:  #476ef7;
+    color: white;
+}
+#header-row th{
+    padding: 15px 10px;
 }
